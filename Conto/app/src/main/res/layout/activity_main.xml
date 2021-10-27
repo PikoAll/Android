@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="213dp"
+        android:layout_height="54dp"
+        android:text="Benvenuti nel Sistema di Piko HOME"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/conto"
+        android:layout_width="197dp"
+        android:layout_height="83dp"
+        android:backgroundTint="@color/black"
+        android:onClick="clickBottone"
+        android:text="Conto"
+        android:textColor="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.335" />
+
+    <Button
+        android:id="@+id/ricordami"
+        android:layout_width="203dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:onClick="clickBottone"
+        android:text="Ricordami"
+        android:textColor="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conto"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <Button
+        android:id="@+id/spesa"
+        android:layout_width="230dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/black"
+        android:onClick="clickBottone"
+        android:text="Spesa"
+        android:textColor="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

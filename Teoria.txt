@@ -1,0 +1,15 @@
+Intent: servono per comunicare con altre applicazioni esterne o con altre opzioni interne all'app
+gli intent possono essere impliciti e espliciti
+
+-----------------
+
+
+
+
+
+
+
+
+
+
+

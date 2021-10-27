@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NavigationDrawerMenuLaterale2</string>
+    <string name="navigation_open">navigation open</string>
+    <string name="navigation_close">navigation close</string>
+</resources>
+
+
+<!--
+ho aggiunto
+<string name="navigation_open">navigation open</string>
+    <string name="navigation_close">navigation close</string>
+
+
+-->
