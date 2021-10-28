@@ -73,26 +73,38 @@ public class MioActivity extends AppCompatActivity {
 
             String timeStamp = new SimpleDateFormat("dd-MM-yyyy").format(Calendar.getInstance().getTime());
 
-            if(casuale.getText().length()>45){
-                Toast.makeText(getApplicationContext(),"Casuale troppo lungha",Toast.LENGTH_SHORT).show();
-                pulisci();
+            if (soldi.getText().toString().equals("") || casuale.getText().toString().equals("")){
+                Toast.makeText(getApplicationContext(),"Campo mancante",Toast.LENGTH_SHORT).show();
             }else{
-                scriviDB("-"+soldi.getText().toString(),casuale.getText().toString(),timeStamp.toString());
-                totale();
-                pulisci();
+                if(casuale.getText().length()>45){
+                    Toast.makeText(getApplicationContext(),"Casuale troppo lungha",Toast.LENGTH_SHORT).show();
+                    pulisci();
+                }else{
+                    scriviDB("-"+soldi.getText().toString(),casuale.getText().toString(),timeStamp.toString());
+                    totale();
+                    pulisci();
+                }
             }
+
+
 
 
         }else if(id == R.id.somma){
             String timeStamp = new SimpleDateFormat("dd-MM-yyyy").format(Calendar.getInstance().getTime());
-            if(casuale.getText().length()>35){
-                Toast.makeText(getApplicationContext(),"Casuale troppo lungha",Toast.LENGTH_SHORT).show();
-                pulisci();
+
+            if (soldi.getText().toString().equals("") || casuale.getText().toString().equals("")){
+                Toast.makeText(getApplicationContext(),"Campo mancante",Toast.LENGTH_SHORT).show();
             }else{
-                scriviDB("+"+soldi.getText().toString(),casuale.getText().toString(),timeStamp.toString());
-                totale();
-                pulisci();
+                if(casuale.getText().length()>35){
+                    Toast.makeText(getApplicationContext(),"Casuale troppo lungha",Toast.LENGTH_SHORT).show();
+                    pulisci();
+                }else{
+                    scriviDB("+"+soldi.getText().toString(),casuale.getText().toString(),timeStamp.toString());
+                    totale();
+                    pulisci();
+                }
             }
+
 
         }else if(id == R.id.saldo){
 
@@ -152,7 +164,7 @@ public class MioActivity extends AppCompatActivity {
         }else{
             dbB.close();
         }
-        System.out.println("-------------------------------------------------------"+ prova);
+        //System.out.println("-------------------------------------------------------"+ prova);
         totale();
     }
 

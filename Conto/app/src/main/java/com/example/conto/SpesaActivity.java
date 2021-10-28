@@ -101,10 +101,12 @@ public class SpesaActivity extends AppCompatActivity {
 
             db.close();
 
-
+/*
         System.out.println(listaIndici.toString());
         System.out.println(lista.toString());
 
+
+ */
 
 
 
@@ -150,14 +152,14 @@ public class SpesaActivity extends AppCompatActivity {
 
     public void click(AdapterView<?> adapterView, View view, int i, long l){
         Toast.makeText(this, "posizione " + i+" nome: "+lista.get(i), Toast.LENGTH_SHORT).show();
-        System.out.println(lista.get(i));
+        //System.out.println(lista.get(i));
         //lista.remove(lista.get(i);
 
         System.out.println("jjjjjjjjjjjjjjjjjjjjjjjjjj"+lista.get(i));
 
         if(aSwitch.isChecked() == true){
             db.open();
-            System.out.println(db.ottieniTutto().toString());
+           // System.out.println(db.ottieniTutto().toString());
             db.cancellaCliente(trova(lista.get(i)));
             //trova();
             db.close();
@@ -184,7 +186,7 @@ public class SpesaActivity extends AppCompatActivity {
     private int trova(String s){
 
         int x = lista.indexOf(s);
-        System.out.println("forssssssssssssssssssssssss"+x);
+        //System.out.println("forssssssssssssssssssssssss"+x);
 
         return listaIndici.get(x);
     }

@@ -138,8 +138,8 @@ public class RisultatoActivity extends AppCompatActivity {
         for (String key1: dizionario.keySet()){
             s1 = s1 + key1 + "\n\n";
             s2 = s2 + dizionario.get(key1) + "\n\n";
-            System.out.println(key1+ " = " + dizionario.get(key1));
-            System.out.println("------------------------");
+        //    System.out.println(key1+ " = " + dizionario.get(key1));
+        //    System.out.println("------------------------");
         }
         rsoldi.setText(s2);
         rcasuale.setText(s1);
